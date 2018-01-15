@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Dogui App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-img [width]="90" [height]="90" src="../assets/imgs/gent.jpg"></ion-img>
+  <br/>
+  Please fill your credentials.
+  <ion-list>
+    <ion-item>
+      <ion-input type="email" [(ngModel)]="user.email" placeholder="Email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" [(ngModel)]="user.password" placeholder="Password"></ion-input>
+    </ion-item>
+    </ion-list>
+    <button ion-button full (click)="login()">Login</button>
+    <button ion-button full color="secondary" (click)="register()" clear>Register</button>
+</ion-content>

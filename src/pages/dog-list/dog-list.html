@@ -1,0 +1,21 @@
+<!--
+  Generated template for the DogListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Dog List</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <button ion-item  *ngFor="let item of dogs" (click)="goToDetail(item)">
+    {{ item.breed | uppercase}}
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <ion-icon  name="ios-arrow-forward-outline" ></ion-icon>
+    </button>   
+  </ion-list>
+</ion-content>
